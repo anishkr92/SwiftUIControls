@@ -41,7 +41,7 @@ struct UIControlsData {
         UIControlItem(title: "Virtual Keyboards"),
         UIControlItem(title: "Activity Rings", view: ActivityRingsExample()),
         UIControlItem(title: "Gauges", view: GaugesExample()),
-        UIControlItem(title: "Pressure Indiacators"),
+        UIControlItem(title: "Pressure Indicators"),
         UIControlItem(title: "Forms")
     ].sorted { $0.title < $1.title }
 }
