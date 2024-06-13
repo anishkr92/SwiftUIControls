@@ -43,7 +43,7 @@ struct RedirectView: View {
     @ViewBuilder
     var mainText: some View {
         let commonText = Text(itemName).themedStyle()
-        + Text(" is shown in ")
+        + Text(" are shown in ")
         + Text(redirectItem).themedStyle()
         
         if let extraText, !extraText.isEmpty {
