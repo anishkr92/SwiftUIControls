@@ -17,6 +17,8 @@ final class FormsViewModel {
     var rating = 7
     var externalLink: URL?
     
+    let birthDateRange = Date.distantPast...Date()
+    
     init(firstName: String = "", lastName: String = "", phoneNumber: String = "", birthDate: Date = Date(), shouldSendNewsletter: Bool = false, rating: Int = 7, externalLink: String = "https://developer.apple.com/") {
         self.firstName = firstName
         self.lastName = lastName

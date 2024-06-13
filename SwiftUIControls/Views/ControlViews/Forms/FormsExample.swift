@@ -15,34 +15,41 @@ struct FormsExample: View {
     var body: some View {
         Form {
             Section("Personal Information") {
-                TextField("First Name", text: $viewModel.firstName)
-                    .keyboardType(.namePhonePad)
-                    .submitLabel(.next)
-                    .focused($focusedField, equals: .firstName)
+                LabeledContent("First Name") {
+                    TextField("First Name", text: $viewModel.firstName)
+                        .keyboardType(.namePhonePad)
+                        .submitLabel(.next)
+                        .focused($focusedField, equals: .firstName)
+                        .themedFormTextStyle()
+                }
                 
-                TextField("Last Name", text: $viewModel.lastName)
-                    .keyboardType(.namePhonePad)
-                    .submitLabel(.next)
-                    .focused($focusedField, equals: .lastName)
+                LabeledContent("Last Name") {
+                    TextField("Last Name", text: $viewModel.lastName)
+                        .keyboardType(.namePhonePad)
+                        .submitLabel(.next)
+                        .focused($focusedField, equals: .lastName)
+                        .themedFormTextStyle()
+                }
                 
-                TextField("Phone Number", text: $viewModel.phoneNumber)
-                    .keyboardType(.phonePad)
-                    .submitLabel(.done)
-                    .focused($focusedField, equals: .phoneNumber)
+                LabeledContent("Phone Number") {
+                    TextField("Phone Number", text: $viewModel.phoneNumber)
+                        .keyboardType(.phonePad)
+                        .focused($focusedField, equals: .phoneNumber)
+                        .themedFormTextStyle()
+                }
                 
-                DatePicker("Birth Date", selection: $viewModel.birthDate, in: ClosedRange<Date>.init(uncheckedBounds: (lower: Date.distantPast, upper: Date())), displayedComponents: .date)
+                DatePicker("Birth Date", selection: $viewModel.birthDate, in: viewModel.birthDateRange,
+                           displayedComponents: .date)
+                    .tint(.red)
             }
             
             Section("Actions") {
                 Toggle("Send Newsletter", isOn: $viewModel.shouldSendNewsletter)
                 Stepper(value: $viewModel.rating, in: 1...10) {
-                    HStack {
-                        Text("Swift Rating")
-                        
-                        Spacer()
-                        
+                    LabeledContent("Swift Rating") {
                         Text("\(viewModel.rating)")
                             .bold()
+                            .foregroundStyle(.red)
                         Image(systemName: "star.fill")
                             .foregroundStyle(.yellow)
                     }
@@ -83,4 +90,12 @@ struct FormsExample: View {
 
 enum FocusableField {
     case firstName, lastName, phoneNumber
+}
+
+fileprivate extension View {
+    nonisolated func themedFormTextStyle() -> some View {
+        self
+            .multilineTextAlignment(.trailing)
+            .foregroundStyle(.red)
+    }
 }
