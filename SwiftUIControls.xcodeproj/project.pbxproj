@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F813A7FB2C1A82A9005F02E2 /* FormsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A7F92C1A82A9005F02E2 /* FormsViewModel.swift */; };
 		F813A7FC2C1A82A9005F02E2 /* FormsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A7F82C1A82A9005F02E2 /* FormsExample.swift */; };
+		F813A8032C1A9994005F02E2 /* RedirectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A8022C1A9994005F02E2 /* RedirectView.swift */; };
 		F82519B52C0F895600CE5F3D /* SwiftUIControlsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519B42C0F895600CE5F3D /* SwiftUIControlsApp.swift */; };
 		F82519B72C0F895600CE5F3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519B62C0F895600CE5F3D /* ContentView.swift */; };
 		F82519B92C0F895700CE5F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82519B82C0F895700CE5F3D /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		F813A7F82C1A82A9005F02E2 /* FormsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsExample.swift; sourceTree = "<group>"; };
 		F813A7F92C1A82A9005F02E2 /* FormsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsViewModel.swift; sourceTree = "<group>"; };
+		F813A8022C1A9994005F02E2 /* RedirectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectView.swift; sourceTree = "<group>"; };
 		F82519B12C0F895600CE5F3D /* SwiftUIControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82519B42C0F895600CE5F3D /* SwiftUIControlsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlsApp.swift; sourceTree = "<group>"; };
 		F82519B62C0F895600CE5F3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				F82519B62C0F895600CE5F3D /* ContentView.swift */,
 				F82519C62C0F8B0200CE5F3D /* ControlListItem.swift */,
+				F813A8022C1A9994005F02E2 /* RedirectView.swift */,
 				F82519CC2C0F97D900CE5F3D /* ControlViews */,
 			);
 			path = Views;
@@ -330,6 +333,7 @@
 				F82519E02C0FBE5A00CE5F3D /* ButtonsExample.swift in Sources */,
 				F82519F32C0FDCF200CE5F3D /* GaugesExample.swift in Sources */,
 				F82519B72C0F895600CE5F3D /* ContentView.swift in Sources */,
+				F813A8032C1A9994005F02E2 /* RedirectView.swift in Sources */,
 				F82519D32C0F9DCD00CE5F3D /* ActivityRingsExample.swift in Sources */,
 				F82519DD2C0FAAB200CE5F3D /* AlertsExample.swift in Sources */,
 				F82519DA2C0FA3F000CE5F3D /* ShareLinksExample.swift in Sources */,
