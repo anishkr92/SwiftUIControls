@@ -32,6 +32,7 @@
 		F82519F32C0FDCF200CE5F3D /* GaugesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519F22C0FDCF200CE5F3D /* GaugesExample.swift */; };
 		F82519F62C0FE3A200CE5F3D /* GroupBoxExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519F52C0FE3A200CE5F3D /* GroupBoxExample.swift */; };
 		F82519F92C0FE66F00CE5F3D /* MenusExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519F82C0FE66F00CE5F3D /* MenusExample.swift */; };
+		F8B2330F2C1AAD190054BD32 /* SteppersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B2330E2C1AAD190054BD32 /* SteppersExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		F82519F22C0FDCF200CE5F3D /* GaugesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugesExample.swift; sourceTree = "<group>"; };
 		F82519F52C0FE3A200CE5F3D /* GroupBoxExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxExample.swift; sourceTree = "<group>"; };
 		F82519F82C0FE66F00CE5F3D /* MenusExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusExample.swift; sourceTree = "<group>"; };
+		F8B2330E2C1AAD190054BD32 /* SteppersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppersExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		F82519CC2C0F97D900CE5F3D /* ControlViews */ = {
 			isa = PBXGroup;
 			children = (
+				F8B2330D2C1AAD030054BD32 /* Steppers */,
 				F82519D42C0FA00200CE5F3D /* ActionSheets */,
 				F82519D52C0FA01000CE5F3D /* ActivityRings */,
 				F82519DB2C0FAAA000CE5F3D /* Alerts */,
@@ -268,6 +271,14 @@
 			path = Menus;
 			sourceTree = "<group>";
 		};
+		F8B2330D2C1AAD030054BD32 /* Steppers */ = {
+			isa = PBXGroup;
+			children = (
+				F8B2330E2C1AAD190054BD32 /* SteppersExample.swift */,
+			);
+			path = Steppers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,6 +351,7 @@
 			files = (
 				F82519C72C0F8B0200CE5F3D /* ControlListItem.swift in Sources */,
 				F82519F02C0FDC1E00CE5F3D /* DisclosureGroupsExample.swift in Sources */,
+				F8B2330F2C1AAD190054BD32 /* SteppersExample.swift in Sources */,
 				F82519D72C0FA0AC00CE5F3D /* ActivityRings.swift in Sources */,
 				F82519E02C0FBE5A00CE5F3D /* ButtonsExample.swift in Sources */,
 				F813A80A2C1A9E3C005F02E2 /* TextFieldsExample.swift in Sources */,
