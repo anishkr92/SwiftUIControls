@@ -35,7 +35,7 @@ struct UIControlsData {
         UIControlItem(title: "Pickers"),
         UIControlItem(title: "Segmented Controls"),
         UIControlItem(title: "Sliders"),
-        UIControlItem(title: "Steppers"),
+        UIControlItem(title: "Steppers", view: SteppersExample()),
         UIControlItem(title: "Text Fields", view: TextFieldsExample()),
         UIControlItem(title: "Toggles"),
         UIControlItem(title: "Virtual Keyboards"),

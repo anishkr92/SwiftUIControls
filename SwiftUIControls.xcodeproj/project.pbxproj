@@ -153,7 +153,6 @@
 		F82519CC2C0F97D900CE5F3D /* ControlViews */ = {
 			isa = PBXGroup;
 			children = (
-				F8B2330D2C1AAD030054BD32 /* Steppers */,
 				F82519D42C0FA00200CE5F3D /* ActionSheets */,
 				F82519D52C0FA01000CE5F3D /* ActivityRings */,
 				F82519DB2C0FAAA000CE5F3D /* Alerts */,
@@ -166,6 +165,7 @@
 				F82519F42C0FE38B00CE5F3D /* GroupBoxes */,
 				F82519F72C0FE65D00CE5F3D /* Menus */,
 				F82519D82C0FA39B00CE5F3D /* ShareLinks */,
+				F8B2330D2C1AAD030054BD32 /* Steppers */,
 				F813A8092C1A9E3C005F02E2 /* TextFields */,
 			);
 			path = ControlViews;
