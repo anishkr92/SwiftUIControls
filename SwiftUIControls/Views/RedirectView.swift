@@ -13,20 +13,9 @@ struct RedirectView: View {
     private let redirectItem: String
     private let extraText: String?
     
-    private var text: LocalizedStringKey {
-        let commonText = "**\(itemName)** is shown in **\(redirectItem)**"
-        if let extraText, !extraText.isEmpty {
-            return LocalizedStringKey(commonText + " " + extraText)
-        } else {
-            return LocalizedStringKey(commonText)
-        }
-    }
-    
     private var controlItem: UIControlItem {
         UIControlsData.list.first { $0.title == redirectItem }!
     }
-    
-    let attributedString: AttributedString = "**Bold** text"
     
     var body: some View {
         VStack(spacing: 20) {
