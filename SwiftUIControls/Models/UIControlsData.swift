@@ -42,7 +42,7 @@ struct UIControlsData {
         UIControlItem(title: "Activity Rings", view: ActivityRingsExample()),
         UIControlItem(title: "Gauges", view: GaugesExample()),
         UIControlItem(title: "Pressure Indicators"),
-        UIControlItem(title: "Forms")
+        UIControlItem(title: "Forms", view: FormsExample())
     ].sorted { $0.title < $1.title }
 }
 
@@ -63,7 +63,7 @@ struct UIControlItem: Hashable {
         self.view = ContentUnavailableView(
             "\(title) Coming Soon",
             systemImage: "rectangle.on.rectangle.slash.fill",
-            description: Text("The example UI for \(title) is not yet ready.")
+            description: Text("The example UI for **\(title)** is not yet ready.")
         )
     }
     

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -55,6 +55,21 @@
 		F82519F52C0FE3A200CE5F3D /* GroupBoxExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxExample.swift; sourceTree = "<group>"; };
 		F82519F82C0FE66F00CE5F3D /* MenusExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F813A7F52C1A6C87005F02E2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FormsExample.swift,
+				FormsViewModel.swift,
+			);
+			target = F82519B02C0F895600CE5F3D /* SwiftUIControls */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F813A7F22C1A6C6E005F02E2 /* Forms */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F813A7F52C1A6C87005F02E2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Forms; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F82519AE2C0F895600CE5F3D /* Frameworks */ = {
@@ -125,6 +140,7 @@
 		F82519CC2C0F97D900CE5F3D /* ControlViews */ = {
 			isa = PBXGroup;
 			children = (
+				F813A7F22C1A6C6E005F02E2 /* Forms */,
 				F82519D42C0FA00200CE5F3D /* ActionSheets */,
 				F82519D52C0FA01000CE5F3D /* ActivityRings */,
 				F82519DB2C0FAAA000CE5F3D /* Alerts */,
