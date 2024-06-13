@@ -10,6 +10,7 @@
 		F813A7FB2C1A82A9005F02E2 /* FormsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A7F92C1A82A9005F02E2 /* FormsViewModel.swift */; };
 		F813A7FC2C1A82A9005F02E2 /* FormsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A7F82C1A82A9005F02E2 /* FormsExample.swift */; };
 		F813A8032C1A9994005F02E2 /* RedirectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A8022C1A9994005F02E2 /* RedirectView.swift */; };
+		F813A80A2C1A9E3C005F02E2 /* TextFieldsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813A8082C1A9E3C005F02E2 /* TextFieldsExample.swift */; };
 		F82519B52C0F895600CE5F3D /* SwiftUIControlsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519B42C0F895600CE5F3D /* SwiftUIControlsApp.swift */; };
 		F82519B72C0F895600CE5F3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82519B62C0F895600CE5F3D /* ContentView.swift */; };
 		F82519B92C0F895700CE5F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82519B82C0F895700CE5F3D /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		F813A7F82C1A82A9005F02E2 /* FormsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsExample.swift; sourceTree = "<group>"; };
 		F813A7F92C1A82A9005F02E2 /* FormsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsViewModel.swift; sourceTree = "<group>"; };
 		F813A8022C1A9994005F02E2 /* RedirectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectView.swift; sourceTree = "<group>"; };
+		F813A8082C1A9E3C005F02E2 /* TextFieldsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsExample.swift; sourceTree = "<group>"; };
 		F82519B12C0F895600CE5F3D /* SwiftUIControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82519B42C0F895600CE5F3D /* SwiftUIControlsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlsApp.swift; sourceTree = "<group>"; };
 		F82519B62C0F895600CE5F3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 				F813A7F92C1A82A9005F02E2 /* FormsViewModel.swift */,
 			);
 			path = Forms;
+			sourceTree = "<group>";
+		};
+		F813A8092C1A9E3C005F02E2 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				F813A8082C1A9E3C005F02E2 /* TextFieldsExample.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		F82519A82C0F895600CE5F3D = {
@@ -153,6 +163,7 @@
 				F82519F42C0FE38B00CE5F3D /* GroupBoxes */,
 				F82519F72C0FE65D00CE5F3D /* Menus */,
 				F82519D82C0FA39B00CE5F3D /* ShareLinks */,
+				F813A8092C1A9E3C005F02E2 /* TextFields */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -331,6 +342,7 @@
 				F82519F02C0FDC1E00CE5F3D /* DisclosureGroupsExample.swift in Sources */,
 				F82519D72C0FA0AC00CE5F3D /* ActivityRings.swift in Sources */,
 				F82519E02C0FBE5A00CE5F3D /* ButtonsExample.swift in Sources */,
+				F813A80A2C1A9E3C005F02E2 /* TextFieldsExample.swift in Sources */,
 				F82519F32C0FDCF200CE5F3D /* GaugesExample.swift in Sources */,
 				F82519B72C0F895600CE5F3D /* ContentView.swift in Sources */,
 				F813A8032C1A9994005F02E2 /* RedirectView.swift in Sources */,

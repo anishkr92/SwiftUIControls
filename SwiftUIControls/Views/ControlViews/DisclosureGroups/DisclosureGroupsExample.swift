@@ -14,5 +14,7 @@ struct DisclosureGroupsExample: View {
 }
 
 #Preview {
-    DisclosureGroupsExample()
+    NavigationStack {
+        DisclosureGroupsExample()
+    }
 }
