@@ -13,7 +13,7 @@ struct UIControlsData {
         UIControlItem(title: "Charts", view: ChartsExample()),
         UIControlItem(title: "Images"),
         UIControlItem(title: "Texts"),
-        UIControlItem(title: "Links"),
+        UIControlItem(title: "Links", view: LinksExample()),
         UIControlItem(title: "Group Box", view: GroupBoxExample()),
         UIControlItem(title: "Disclosure Groups", view: DisclosureGroupsExample()),
         UIControlItem(title: "Labels"),
