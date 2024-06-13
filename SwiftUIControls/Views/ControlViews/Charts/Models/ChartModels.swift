@@ -5,7 +5,13 @@
 //  Created by Anish Kumar on 05/06/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct ChartItem {
+    var title: String
+    var chartView: any View
+    var isExpanded = false
+}
 
 struct Movie: Identifiable {
     var id = UUID()

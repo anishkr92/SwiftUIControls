@@ -9,20 +9,27 @@ import SwiftUI
 import Charts
 
 struct ChartsExample: View {
-    let chartsList: [UIControlItem] = [
-        UIControlItem(title: "Bar Chart", view: BarChartExample()),
-        UIControlItem(title: "Range Chart", view: RangeChartExample()),
+    
+    
+    @State private var chartsList: [ChartItem] = [
+        .init(title: "Bar Chart", chartView: BarChartExample()),
+        .init(title: "Range Chart", chartView: RangeChartExample()),
     ]
     
     var body: some View {
         List {
-            ForEach(chartsList, id: \.title) { item in
-                DisclosureGroup {
-                    AnyView(item.view)
+            ForEach($chartsList, id: \.title) { $item in
+                DisclosureGroup(isExpanded: $item.isExpanded) {
+                    AnyView(item.chartView)
                         .frame(height: 300)
                 } label: {
-                    Text(item.title)
-                        .font(.headline)
+                    Button(item.title) {
+                        withAnimation {
+                            item.isExpanded.toggle()
+                        }
+                    }
+                    .foregroundStyle(.primary)
+                    .font(.headline)
                 }
             }
         }
